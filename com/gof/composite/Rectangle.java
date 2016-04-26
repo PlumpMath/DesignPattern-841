@@ -1,17 +1,16 @@
 package com.gof.composite;
 
-public class Rectangle extends Graphic{
-	//private int x, y, r;
+public class Rectangle implements Graphic{
+	private int x, y, width, height;
 
 	public void draw(){
-		System.out.println("this is Rectangle.(" + x + ", " + y + ") 半径:" + r);
+		System.out.println("this is Rectangle.(" + x + ", " + y + ") width: " + width + ", height: " + height);
 	}
-/*
-	@Override
-	public void set(int x, int y, int r){
+
+	public void set(int x, int y, int width, int height){
 		this.x = x;
 		this.y = y;
-		this.r = r;
+		this.width = width;
+		this.height = height;
 	}
-	*/
 }

@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 //import java.util.Iterator;
 
-public class CompositeGraphics extends Graphic{
+public class CompositeGraphics implements Graphic{
 	private List<Graphic> graphics = new ArrayList<Graphic>();
 	private String name = "";
 
