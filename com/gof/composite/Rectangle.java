@@ -1,6 +1,6 @@
 package com.gof.composite;
 
-public class Rectangle implements Graphic{
+public class Rectangle extends MyGraphics{
 	private int x, y, width, height;
 
 	public void draw(){

@@ -1,6 +1,6 @@
 package com.gof.composite;
 
-public class Triangle implements Graphic{
+public class Triangle extends MyGraphics{
 	private int x, y, width, height;
 
 	public void draw(){

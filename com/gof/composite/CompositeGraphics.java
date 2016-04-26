@@ -4,13 +4,13 @@ import java.util.List;
 import java.util.ArrayList;
 //import java.util.Iterator;
 
-public class CompositeGraphics implements Graphic{
-	private List<Graphic> graphics = new ArrayList<Graphic>();
+public class CompositeGraphics extends MyGraphics{
+	private List<MyGraphics> graphics = new ArrayList<MyGraphics>();
 	private String name = "";
 
 	public void draw(){
 		System.out.println("this is " + name + " Composite");
-		for(Graphic graphic: graphics){
+		for(MyGraphics graphic: graphics){
 			graphic.draw();
 		}
 	};
@@ -19,7 +19,7 @@ public class CompositeGraphics implements Graphic{
 		this.name = name;
 	}
 
-	public void add(Graphic graphic){
+	public void add(MyGraphics graphic){
 		this.graphics.add(graphic);
 	}
 }
